@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dr Your Name – Academic Profile</title>
+  <meta name="description" content="Academic profile of Dr Your Name – research, publications, projects, teaching." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.png" />
+  <!-- Open Graph for nice link previews -->
+  <meta property="og:title" content="Dr Your Name – Academic Profile" />
+  <meta property="og:description" content="Research, publications, projects, and teaching." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/portrait.jpg" />
+  <!-- Optional: Person schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Dr Your Name",
+    "affiliation":{"@type":"Organization","name":"Your University / Institute"},
+    "jobTitle":"Your Role",
+    "email":"mailto:you@university.edu",
+    "url":"https://your-username.github.io",
+    "sameAs":[
+      "https://scholar.google.com/citations?user=XXXX",
+      "https://orcid.org/0000-0000-0000-0000",
+      "https://github.com/your-username",
+      "https://twitter.com/your-handle"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="wrap hero" id="home">
+    <img class="avatar" src="assets/portrait.jpg" alt="Portrait of Dr Your Name" />
+    <div>
+      <h1>Dr Your Name</h1>
+      <p class="lead">Your Role, <a href="#">Department</a>, <a href="#">University</a></p>
+      <p>
+        <a class="chip" href="mailto:you@university.edu">you@university.edu</a>
+        <a class="chip" href="https://scholar.google.com/citations?user=XXXX">Google Scholar</a>
+        <a class="chip" href="https://orcid.org/0000-0000-0000-0000">ORCID</a>
+        <a class="chip" href="assets/CV_YourName.pdf">CV (PDF)</a>
+        <a class="chip" href="https://github.com/your-username">GitHub</a>
+      </p>
+      <nav class="nav">
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="research">
+      <h2>Research</h2>
+      <p>
+        Brief overview of your research interests. Keep this crisp—what problems you study,
+        why they matter, and your methods/areas (e.g., statistical genomics, deep learning, causal inference).
+      </p>
+      <ul class="badges">
+        <li>Keywords 1</li><li>Keywords 2</li><li>Keywords 3</li><li>Keywords 4</li>
+      </ul>
+    </section>
+
+    <section id="publications">
+      <h2>Selected Publications</h2>
+
+      <!-- Repeat this block per paper -->
+      <article class="pub">
+        <div class="pub-meta">
+          <span class="pub-year">2025</span>
+          <span class="pub-type">Journal</span>
+        </div>
+        <div>
+          <h3>Paper Title Goes Here</h3>
+          <p class="authors"><strong>Your Name</strong>, Coauthor A, Coauthor B.</p>
+          <p class="venue">Journal Name <span class="dot">•</span> Volume(Issue), pages</p>
+          <p class="links">
+            <a href="#" aria-label="Read the paper">PDF</a>
+            <a href="#" aria-label="View on publisher site">Publisher</a>
+            <a href="#" aria-label="Read preprint">Preprint</a>
+            <a href="#" aria-label="View code">Code</a>
+            <a href="#" aria-label="BibTeX">BibTeX</a>
+          </p>
+        </div>
+      </article>
+
+      <!-- Add more <article class="pub"> … </article> entries -->
+    </section>
+
+    <section id="projects">
+      <h2>Projects & Software</h2>
+      <div class="grid">
+        <a class="card" href="#">
+          <h3>Tool/Project Name</h3>
+          <p>One-sentence summary of what it does and who it’s for.</p>
+          <span class="pill">Python</span> <span class="pill">R</span>
+        </a>
+        <a class="card" href="#">
+          <h3>Dataset / Resource</h3>
+          <p>What problem it solves; link to docs.</p>
+          <span class="pill">Data</span> <span class="pill">Docs</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="teaching">
+      <h2>Teaching & Talks</h2>
+      <ul class="list">
+        <li><strong>Course Name</strong> — Role (Term, Year). <a href="#">Syllabus</a></li>
+        <li><strong>Talk Title</strong> — Venue (Date). <a href="#">Slides</a> <a href="#">Video</a></li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <address>
+        Department, Building, University<br />
+        City, Country • Postcode<br />
+        <a href="mailto:you@university.edu">you@university.edu</a>
+      </address>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <p>© <span id="year"></span> Your Name. Last updated <time id="updated"></time>.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('updated').textContent = new Date().toLocaleDateString(undefined, {
+      year:'numeric', month:'short', day:'2-digit'
+    });
+  </script>
+</body>
+</html>
