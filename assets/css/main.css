@@ -4228,8 +4228,8 @@
 
 			.banner.full {
 				padding: 0;
-				min-height: 75vh;
-				height: 75vh !important;
+				min-height: 100vh;
+				height: auto !important;
 			}
 
 		}
@@ -4238,8 +4238,8 @@
 
 			.banner.full {
 				padding: 0;
-				min-height: 50vh;
-				height: 75vh !important;
+				min-height: 100vh;
+				height: auto !important;
 			}
 
 			.banner > article {
