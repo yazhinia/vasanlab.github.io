@@ -8,92 +8,40 @@
 </head>
 <body>
 
-  <!-- Header (same as your Hielo header) -->
-  <header id="header" class="alt">
-    <div class="logo"><a href="index.html">RENGACHARI LAB <span>Research Group</span></a></div>
-    <a href="#menu">Menu</a>
-  </header>
+<header id="header" class="alt">
+	<div class="logo">
+		<a href="index.html">RENGACHARI LAB, Imperial College London</a>
+	</div>
+	<a href="#menu">Menu</a>
+</header>
 
-  <!-- Menu -->
-  <nav id="menu">
-    <ul class="links">
-      <li><a href="index.html">Home</a></li>
-      <li><a class="active" href="publications.html">Publications</a></li>
-      <li><a href="index.html#projects">Projects</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
-    </ul>
-  </nav>
+<!-- Slide-in menu (must exist on every page) -->
+<nav id="menu">
+	<ul class="links">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="research.html">RESEARCH</a></li>
+		<li><a href="team.html">TEAM</a></li>
+		<li><a href="publications.html">PUBLICATIONS</a></li>
+		<li><a href="join.html">JOIN</a></li>
+	</ul>
+</nav>
 
   <!-- Banner -->
   <section id="banner" class="style2">
     <div class="inner">
       <header class="align-center">
         <h1>Publications</h1>
-        <p>Papers</p>
-        <!-- Replace USER_ID with your Scholar user id -->
         <p><a class="button special" href="https://scholar.google.com/citations?user=YIAcmCsAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></p>
       </header>
     </div>
   </section>
 
-  <!-- Main -->
-  <div id="main" class="container">
-
-    <!-- Selected (hand-curated) -->
-    <section class="wrapper style1">
-      <div class="inner">
-        <header class="align-left">
-          <h2>Selected publications</h2>
-          <p>Flagship work curated by the lab. Edit this list manually.</p>
-        </header>
-
-        <div class="posts">
-          <!-- Repeat .post for each selected paper -->
-          <article class="post">
-            <h3>Paper Title</h3>
-            <p><strong>First A</strong>, Second B, Third C. <em>Journal Name</em>, 2025.</p>
-            <p>
-              <a href="paper.pdf" class="button small">PDF</a>
-              <a href="https://dx.doi.org/..." class="button small alt">Publisher</a>
-              <a href="https://arxiv.org/abs/..." class="button small">Preprint</a>
-              <a href="https://github.com/..." class="button small">Code</a>
-              <a href="bibtex/paper.bib" class="button small alt">BibTeX</a>
-            </p>
-          </article>
-
-          <!-- Add more articles... -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Auto: Latest from Google Scholar (generated JSON) -->
-    <section class="wrapper style3">
-      <div class="inner">
-        <header class="align-left">
-          <h2>Latest from Google Scholar</h2>
-          <p>This section refreshes automatically (via GitHub Actions).</p>
-        </header>
-
-        <div id="scholar-list" class="posts">
-          <!-- Filled by assets/js/publications.js -->
-        </div>
-
-        <p class="align-right">
-          <a class="button small" href="assets/data/publications.json">Raw JSON</a>
-          <!-- Replace USER_ID with your Scholar user id -->
-          <a class="button small alt" href="https://scholar.google.com/citations?user=USER_ID" target="_blank" rel="noopener">Open Google Scholar</a>
-        </p>
-      </div>
-    </section>
-
-  </div>
-
-  <!-- Footer -->
-  <!-- <footer id="footer">
+  <section class="wrapper style2">
     <div class="inner">
-      <p>© 2025 VASAN LAB · Design based on <a href="https://templated.co/hielo">Hielo</a> (CC BY 3.0)</p>
+      <div id="publications-list">
+        <!-- Publications will be loaded here by publications.js -->
+      </div>
     </div>
-  </footer> -->
 
   <!-- Scripts -->
   <script src="assets/js/jquery.min.js"></script>
