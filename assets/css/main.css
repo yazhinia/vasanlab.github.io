@@ -4322,3 +4322,20 @@
 			}
 
 		}
+
+/* Make header title visible on all pages */
+#header .logo a {
+    color: white !important;
+    font-weight: 700;
+}
+
+/* Make "Menu" toggle visible */
+#header a[href="#menu"] {
+    color: white !important;
+    font-weight: 600;
+}
+
+/* Make menu items fully visible */
+#menu > ul.links > li > a:not(.button) {
+    color: white !important;
+}
